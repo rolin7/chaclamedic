@@ -60,7 +60,7 @@
             margin: 0,
             loop: true,
             nav: true,
-            navText: ['Anterior', 'Siguiente'],
+            navText: ['<i class="fa fa-chevron-circle-left fa-4x" aria-hidden="true"></i>', '<i class="fa fa-chevron-circle-right fa-4x" aria-hidden="true"></i>'],
             dots: true,
             autoplay: false,
             autoplayTimeout: 5000,

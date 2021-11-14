@@ -10,7 +10,9 @@
     <title>Chacla Medic | consultorio médico</title>
     <link rel="icon" href="img/core-img/favicon.ico">
     <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/bootstrap-4.3.1.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./estilo.css">
 </head>
 <body>
     <!-- Preloader -->
@@ -42,7 +44,7 @@
                         <div class="main-menu h-100">
                             <nav class="navbar h-100 navbar-expand-lg">
                                 <!-- Logo Area  -->
-                                <a class="navbar-brand" href="index-2.html"><img src="img/logoo.png" alt="Logo"></a>
+                                <a class="navbar-brand" href="index.html"><img src="img/logoo.png" alt="Logo"></a>
 
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#medilifeMenu" aria-controls="medilifeMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
@@ -59,14 +61,17 @@
                                             <a class="nav-link" href="services.html">Servicios Médicos</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#staff">Staff de Médicos Profesionales</a>
+                                            <a class="nav-link" href="staff-medico.html">Staff Médico</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="promociones.html">Promociones</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="contact.html">Contacto</a>
                                         </li>
                                     </ul>
                                     <!-- Appointment Button -->
-                                    <a href="#reservacita" class="btn medilife-appoint-btn ml-30"><span>Reservar una cita</span></a>
+                                    <a href="#reservacita" class="btn medilife-appoint-btn"><span>Reservar una cita</span></a>
                                 </div>
                             </nav>
                         </div>
@@ -84,13 +89,14 @@
             <div class="single-hero-slide bg-img bg-overlay-white" style="background-image: url(img/about/7.jpg);">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
-                        <div class="col-12">
+                        <div class="col-12 mt-100 hero-alineacion">
                             <div class="hero-slides-content">
-                                <h2 data-animation="fadeInUp" data-delay="100ms">Profesionales de Calidad <br>al servicio de su Salud</h2>
-                                <h6 data-animation="fadeInUp" data-delay="400ms">En Chacla Medic tenemos este mensaje que guía nuestro trabajo diariamente.</h6>
-                                <a href="#staff" class="btn medilife-btn mt-50" data-animation="fadeInUp" data-delay="700ms">Ver Staff de especialistas<span>+</span></a>
+                                <h2 data-animation="fadeInUp" data-delay="100ms">Médicos que <br>Inspiran Seguridad y Confianza</h2>
+                                <h6 data-animation="fadeInUp" data-delay="400ms">Nos comprometemos con la calidad, seguridad, humanidad y existencia de nuestros pacientes en la clínica.</h6>
+                                <a href="staff-medico.html" class="btn medilife-btn mt-30" data-animation="fadeInUp" data-delay="700ms">Ver Staff de especialistas<span>+</span></a>
                             </div>
                         </div>
+                        <p style="color: #ffffff;">@ClinicaCalidad</p>
                     </div>
                 </div>
             </div>
@@ -98,13 +104,14 @@
             <div class="single-hero-slide bg-img bg-overlay-white" style="background-image: url(img/video/portada.JPG);">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
-                        <div class="col-12">
+                        <div class="col-12 mt-100 hero-alineacion">
                             <div class="hero-slides-content">
-                                <h2 data-animation="fadeInUp" data-delay="100ms">Servicio Médico que <br>Inspira Confianza Total</h2>
-                                <h6 data-animation="fadeInUp" data-delay="400ms">Te brindamos una atención en el que puedes confiar con libertad y respeto.</h6>
-                                <a href="#panorama" class="btn medilife-btn mt-50" data-animation="fadeInUp" data-delay="700ms">Ver Panorama General<span>+</span></a>
+                                <h2 data-animation="fadeInUp" data-delay="100ms">Profesionales de Calidad <br>al servicio de su Salud</h2>
+                                <h6 data-animation="fadeInUp" data-delay="400ms">En Chacla Medic tenemos una cultura de innovación y mejora continua.</h5>
+                                <a href="#panorama" class="btn medilife-btn mt-30" data-animation="fadeInUp" data-delay="700ms">Ver Panorama General<span>+</span></a>
                             </div>
                         </div>
+                        <p style="color: #ffffff;">@ClinicaCalidad</p>
                     </div>
                 </div>
             </div>
@@ -112,124 +119,32 @@
             <div class="single-hero-slide bg-img bg-overlay-white" style="background-image: url(img/about/8.jpg);">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
-                        <div class="col-12">
+                        <div class="col-12 mt-100 hero-alineacion">
                             <div class="hero-slides-content">
                                 <h2 data-animation="fadeInUp" data-delay="100ms">Contamos con tecnología <br>de vanguardia</h2>
                                 <h6 data-animation="fadeInUp" data-delay="400ms">Estamos convencidos de que la ayuda tecnológica permite agilizar nuestra atención y que el paciente se sienta más seguro.</h6>
-                                <a href="#descripcion" class="btn medilife-btn mt-50" data-animation="fadeInUp" data-delay="700ms">Ver Descripción<span>+</span></a>
+                                <a href="#descripcion" class="btn medilife-btn mt-30" data-animation="fadeInUp" data-delay="700ms">Ver Descripción<span>+</span></a>
                             </div>
                         </div>
+                        <p style="color: #ffffff;">@ClinicaCalidad</p>
                     </div>
                 </div>
             </div>
         </div>
+        <!--aqui estamos fuera-->
     </section>
     <!-- ***** Hero Area End ***** -->
-
-    <!-- ***** Book An Appoinment Area Start ***** -->
-    <div class="medilife-book-an-appoinment-area" >
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="appointment-form-content">
-                        <div class="row no-gutters align-items-center" id="reservacita">
-                            <div class="col-12 col-lg-9">
-                                <div class="medilife-appointment-form">
-                                    <form>
-                                        <div class="row align-items-end">
-                                            <div class="col-12 col-md-4">
-                                                <div class="form-group">
-                                                    <select class="form-control" id="speciality">
-                                                    <option>Consulta Médica</option>
-                                                    <option>Ecografía</option>
-                                                    <option>Pediatría</option>
-                                                    <option>Inyectables</option>
-                                                    <option>Toma de Muestras</option>
-                                                </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-4">
-                                                <div class="form-group">
-                                                    <select class="form-control" id="doctors">
-                                                    <option>Doctor General</option>
-                                                    <option>Doctor Especializado</option>
-                                                </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-2">
-                                                <div class="form-group">
-                                                    <input type="date" class="form-control" name="date" id="date" placeholder="Date">
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-2">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="time" id="time" placeholder="Hora">
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-4">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control border-top-0 border-right-0 border-left-0" name="name" id="name" placeholder="Nombres">
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-4">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control border-top-0 border-right-0 border-left-0" name="number" id="number" placeholder="Celular">
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-4">
-                                                <div class="form-group">
-                                                    <input type="email" class="form-control border-top-0 border-right-0 border-left-0" name="email" id="email" placeholder="Correo Electrónico">
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-7">
-                                                <div class="form-group mb-0">
-                                                    <textarea name="message" class="form-control mb-0 border-top-0 border-right-0 border-left-0" id="message" cols="30" rows="10" placeholder="Escriba su mensaje aquí"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-5 mb-0">
-                                                <div class="form-group mb-0">
-                                                    <button type="submit" class="btn medilife-btn">Reservar Cita<span>+</span></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-3">
-                                <div class="medilife-contact-info">
-                                    <!-- Single Contact Info -->
-                                    <div class="single-contact-info mb-30">
-                                        <img src="img/icons/alarm-clock.png" alt="">
-                                        <p>Lunes - Viernes 08:00am - 6:00pm <br> Sábado 08:00 am - 12:00 pm <br>Domingo CERRADO</p>
-                                    </div>
-                                    <!-- Single Contact Info -->
-                                    <div class="single-contact-info mb-30">
-                                        <img src="img/icons/envelope.png" alt="">
-                                        <p>966107412 <br>chaclamedic.1@gmail.com</p>
-                                    </div>
-                                    <!-- Single Contact Info -->
-                                    <div class="single-contact-info">
-                                        <img src="img/icons/map-pin.png" alt="">
-                                        <p> Cooperativa Alfonso Cobian Mz H2 Lt 16, Chaclacayo <br>Referencia: Paradero Miguel Grau</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ***** Book An Appoinment Area End ***** -->
 
     <!-- ***** About Us Area Start ***** -->
     <section class="medica-about-us-area section-padding-100-20" id="descripcion" >
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-4">
-                    <div class="medica-about-content">
+                    <div class="medica-about-content" >
+                        <div class="medical-square" >
                         <h2>Nuestra prioridad es el paciente</h2>
                         <p style="text-align: justify;"> En Chacla Medic apostamos por las buenas relaciones y el respeto hacia nuestros clientes, aspirando a un mundo mejor en base a nuestros buenos principios y valores éticos profesionales.</p>
+                        </div>
                         <a href="services.html" class="btn medilife-btn mt-50">Ver servicios<span>+</span></a>
                     </div>
                 </div>
@@ -242,8 +157,8 @@
                                     <i class="icon-doctor"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h5>Los mejores doctores</h5>
-                                    <p >Tenemos el listado de los mejores doctores, son profesionales y cabales en su labor.</p>
+                                    <h5>Los mejores médicos</h5>
+                                    <p >Profesionales encargados para velar por la salud de cada paciente las 24 Hrs. del día.</p>
                                 </div>
                             </div>
                         </div>
@@ -267,7 +182,7 @@
                                 </div>
                                 <div class="service-content">
                                     <h5>Laboratorio</h5>
-                                    <p>Nuestro ambiente de tratamiento es de primera calidad, tenemos la pasión por brindar lo mejor.</p>
+                                    <p>Nuestro ambiente de tratamiento es de primera calidad, con la mas alta tecnologia y sofisticado equipo médico.</p>
                                 </div>
                             </div>
                         </div>
@@ -278,8 +193,8 @@
                                     <i class="icon-emergency-call-1"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h5>Cuarto de emergencias</h5>
-                                    <p>Contamos con un espacio dedicado frente a cualquier problema de emergencia que ocurra.</p>
+                                    <h5>Ambiente de recepción</h5>
+                                    <p>Parte de nuestra cultura es atenderte con amabilidad y buen tacto desde tu llegada a nuestra clínica.</p>
                                 </div>
                             </div>
                         </div>
@@ -354,25 +269,30 @@
                 <a href="img/gallery/viernes.jpg" class="btn gallery-img">Ver +</a>
             </div>
         </div>
-
         <!-- Single Gallery Item -->
         <div class="single-gallery-item">
-            <img src="img/staff/6.jpg" alt="">
+            <img src="img/gallery/martes.jpg" alt="">
             <div class="view-more-btn">
-                <a href="img/staff/6.jpg" class="btn gallery-img">Ver +</a>
+                <a href="img/gallery/martes.jpg" class="btn gallery-img">Ver +</a>
             </div>
         </div>
     </div>
     <!-- ***** Gallery Area End ***** -->
 
-    <!-- ***** Features Area Start ***** -->
-    <div class="medilife-features-area section-padding-100">
+     <!-- ***** Features Area Start ***** -->
+     <div class="medilife-features-area section-padding-100">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-md-12">
+                <div class="col-12 col-lg-6">
                     <div class="features-content">
-                        <h2 style="text-align: center;">Staff de Médicos Especializados</h2>
-                        <p>Contamos con un staff de médicos de reconocida trayectoria en cada una sus especialidades y demás profesionales de la salud altamente capacitados en sus respectivas áreas médicas o quirúrgicas, que te brindarán una trato amable y cálido en cada una de tus visitas de manera presencial o por teleconsulta.</p>
+                        <h2>Una nueva forma de tratar a los pacientes en una clínica de confianza</h2>
+                        <p>Conozca nuestros médicos de confianza y obtenga la mejor cobertura en asistencia médica, urgencias, hospitalización y más servicios que le ofrecemos.</p>
+                        <a href="staff-medico.html" class="btn medilife-btn mt-50">Ver staff médico <span>+</span></a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="features-thumbnail">
+                        <img src="img/bg-img/medical1.png" alt="">
                     </div>
                 </div>
             </div>
@@ -380,88 +300,180 @@
     </div>
     <!-- ***** Features Area End ***** -->
 
-    <!-- ***** staff medico Start ***** -->
-    <div class="medilife-blog-area section-padding-10-0" id="staff">
+    <!--testimonies-->
+    <section class="testimonial">
         <div class="container">
             <div class="row">
-                <!-- Single Blog Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-blog-area mb-100">
-                        <!-- Post Thumbnail -->
-                        <div class="blog-post-thumbnail">
-                            <img src="img/staff/1.jpg" alt="">
-                            <!-- Post Date -->
-                            <div class="post-date">
-                                <a href="#">Actualizado, 2021</a>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <ol class="carousel-indicators tabs">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                            <figure>
+                                <img src="https://livedemo00.template-help.com/wt_62267_v8/prod-20823-one-service/images/testimonials-01-179x179.png" class="img-fluid" alt="">
+                            </figure>
+                        </li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1">
+                            <figure>
+                                <img src="https://livedemo00.template-help.com/wt_62267_v8/prod-20823-one-service/images/testimonials-02-306x306.png" class="img-fluid" alt="">
+                            </figure>
+                        </li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2">
+                            <figure>
+                                <img src="https://livedemo00.template-help.com/wt_62267_v8/prod-20823-one-service/images/testimonials-03-179x179.png" class="img-fluid" alt="">
+                            </figure>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <div id="carouselExampleIndicators" data-interval="false" class="carousel slide" data-ride="carousel">
+                        <h3>¿QUÉ OPINAN NUESTROS PACIENTES?</h3>
+                        <h1>TESTIMONIOS</h1>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="quote-wrapper">
+                                    <p>Linda experiencia en mi parto. Los médicos muy humanos, pacientes y sobre todo nos dieron mucha confianza antes de la operación. Gracias por hacer de eso momento inolvidable para mi.</p>
+                                    <h3>Paciente 1</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="quote-wrapper">
+                                    <p>Buena clínica, atienden con mucha humanidad, todos son respetuosos al servicio del paciente, desde el que limpia, el de seguridad, los doctores y enfermeros, todos una excelente atención, sigan así. Lo digo porque yo me atiendo en la clínica.</p>
+                                    <h3>Paciente 2</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="quote-wrapper">
+                                    <p>Un poco de paciencia, todas las clínicas tienen algo por mejorar, mi esposa estuvo internada 5 meses y recibió la mejor atención A1, siempre estaremos agradecidos, si hoy tenemos a muestro bebé con nosotros, parte de esto se lo debemos a esta clínica, al personal, a los doctores de ginecología, al personal de nutrición y a todos muchas gracias.</p>
+                                    <h3>Paciente 3</h3>
+                                </div>
                             </div>
                         </div>
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            <div class="post-author">
-                                <a href="#"><img src="img/staff/1.jpg" alt=""></a>
-                            </div>
-                            <a href="#" class="headline">Chacla Medic, Especialista 1</a>
-                        </div>
+                        <ol class="carousel-indicators indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
                     </div>
                 </div>
-                <!-- Single Blog Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-blog-area mb-100">
-                        <!-- Post Thumbnail -->
-                        <div class="blog-post-thumbnail">
-                            <img src="img/staff/4.jpg" alt="">
-                            <!-- Post Date -->
-                            <div class="post-date">
-                                <a href="#">Actualizado, 2021</a>
+            </div>
+        </div>
+    </section>  
+
+    
+        <!-- ***** Book An Appoinment Area Start ***** -->
+        <div class="medilife-book-an-appoinment-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="appointment-form-content">
+                            <div class="row no-gutters align-items-center" id="reservacita">
+                                <div class="col-12 col-lg-9">
+                                    <div class="medilife-appointment-form">
+                                        <form>
+                                            <div class="row align-items-end">
+                                                <div class="col-12 col-md-4">
+                                                    <div class="form-group">
+                                                        <select class="form-control" id="speciality">
+                                                        <option>Consulta Médica</option>
+                                                    </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="form-group">
+                                                        <input type="date" class="form-control" name="date" id="date" value="Seleccionar ">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="form-group">
+                                                        <select class="form-control" id="speciality">
+                                                        <option>Seleccione el momento</option>
+                                                        <option>Mañana</option>
+                                                        <option>Tarde</option>
+                                                    </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="form-group">
+                                                        <input type="text" style="color: cornsilk;" class="form-control border-top-0 border-right-0 border-left-0" name="name" id="name" placeholder="Nombres">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="form-group">
+                                                        <input type="number" oninput="if(value.length>9) value=value.slice(0,9)" style="color: cornsilk; font-weight: bold;" class="form-control border-top-0 border-right-0 border-left-0" name="number" id="number" placeholder="Celular">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="form-group">
+                                                        <input type="email" style="color: cornsilk;" class="form-control border-top-0 border-right-0 border-left-0" name="email" id="email" placeholder="Correo Electrónico">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-3 mb-0">
+                                                    <div class="form-group mb-0">
+                                                        <input type="text" style="color: cornsilk;" class="form-control mb-0 border-top-0 border-right-0 border-left-0" name="dni" id="dni" placeholder="DNI">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-group mb-0">
+                                                        <textarea name="message" style="color: cornsilk;" class="form-control mb-0 border-top-0 border-right-0 border-left-0" id="message" cols="30" rows="10" placeholder="Escriba su mensaje aquí"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-3 mb-0">
+                                                    <div class="form-group mb-0">
+                                                        <button type="submit" class="btn medilife-btn">Reservar Cita<span>+</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3">
+                                    <div class="medilife-contact-info">
+                                        <!-- Single Contact Info -->
+                                        <div class="single-contact-info mb-30">
+                                            <img src="img/icons/alarm-clock.png" alt="">
+                                            <p>Lunes - Viernes 08:00am - 6:00pm <br> Sábado 08:00 am - 12:00 pm <br>Domingo CERRADO</p>
+                                        </div>
+                                        <!-- Single Contact Info -->
+                                        <div class="single-contact-info mb-30">
+                                            <img src="img/icons/envelope.png" alt="">
+                                            <p>966107412 <br>chaclamedic.1@gmail.com</p>
+                                        </div>
+                                        <!-- Single Contact Info -->
+                                        <div class="single-contact-info">
+                                            <img src="img/icons/map-pin.png" alt="">
+                                            <p> Cooperativa Alfonso Cobian Mz H2 Lt 16, Chaclacayo <br>Referencia: Paradero Miguel Grau</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            <div class="post-author">
-                                <a href="#"><img src="img/staff/4.jpg" alt=""></a>
-                            </div>
-                            <a href="#" class="headline">Chacla Medic, Especialista 2</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Blog Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-blog-area mb-100">
-                        <!-- Post Thumbnail -->
-                        <div class="blog-post-thumbnail">
-                            <img src="img/staff/2.jpg" alt="">
-                            <!-- Post Date -->
-                            <div class="post-date">
-                                <a href="#">Actualizado, 2021</a>
-                            </div>
-                        </div>
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            <div class="post-author">
-                                <a href="#"><img src="img/staff/2.jpg" alt=""></a>
-                            </div>
-                            <a href="#" class="headline">Chacla Medic, Especialista 3</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- ***** Book An Appoinment Area End ***** -->
+
+    <!--seccion de tarjetas-->
+    <div class="row">
+        <div class="col-md-6">
+            <img src="./img/contact/tarjeta.png" alt="" style="border-radius: 10px;">
+        </div>
+        <div class="col-md-6">
+            <img src="./img/logo.png" alt="" style="padding: 70px; height: 340px;">
+        </div>
     </div>
-    <!-- ***** staff medico End ***** -->
 
     <!-- ***** Footer Area Start ***** -->
-    <footer class="footer-area section-padding-100">
+    <footer class="footer-area section-padding-100" style="background-image: url('./img/bg-img/hero1.jpg'); height: 490px;">
         <!-- Main Footer Area -->
         <div class="main-footer-area">
             <div class="container-fluid">
                 <div class="row">
-
-                    <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="col-12 col-sm-6 col-xl-4">
                         <div class="footer-widget-area">
                             <div class="footer-logo">
                                 <img src="img/logoo.png" alt="">
                             </div>
-                            <p>Nuestra prioridad es el paciente. Nos interesa su bienestar y su pronta recuperación.</p>
+                            <p style="text-align: justify; font-family: 'Montserrat', sans-serif; color: black;">CLÍNICA CHACLAMEDIC cuenta con una infraestructura moderna, personal médico capacitado y tecnología de última generación. Esto facilita a nuestros pacientes una atención médica de calidad.</p>
                             <div class="footer-social-info">
                                 <a href="https://mail.google.com/mail/u/0/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                                 <a href="https://www.linkedin.com/in/chacla-medic-consultorio-74aa82159/?originalSubdomain=pe" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
@@ -471,46 +483,39 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="col-12 col-sm-6 col-xl-2">
                         <div class="footer-widget-area">
                             <div class="widget-title">
-                                <h6>Sitios Top</h6>
+                                <h6>La clínica</h6>
                             </div>
                             <div class="widget-blog-post">
                                 <!-- Single Blog Post -->
-                                <div class="widget-single-blog-post d-flex">
-                                    <div class="widget-post-thumbnail">
-                                        <img src="img/blog-img/ln1.jpg" alt="">
-                                    </div>
-                                    <div class="widget-post-content">
-                                        <a href="#panorama">Panorama General</a>
-                                        <p>Chacla Medic</p>
-                                    </div>
+                                <div class="widget-single-blog-post d-flex" >
+                                    <i class="fa fa-users" aria-hidden="true"> <a href="#panorama" style="margin-left: 10px;">Nosotros</a></i>
+                                </div>
+                                <!-- Single Blog Post -->
+                                <div class="widget-single-blog-post d-flex" >
+                                    <i class="fa fa-heartbeat" aria-hidden="true"> <a href="#descripcion" style="margin-left: 10px;">Características</a></i>
                                 </div>
                                 <!-- Single Blog Post -->
                                 <div class="widget-single-blog-post d-flex">
-                                    <div class="widget-post-thumbnail">
-                                        <img src="img/about/7.jpg" alt="">
-                                    </div>
-                                    <div class="widget-post-content">
-                                        <a href="#descripcion">Descripción</a>
-                                        <p>Chacla Medic</p>
-                                    </div>
+                                    <i class="fa fa-heartbeat" aria-hidden="true"> <a href="services.html" style="margin-left: 10px;">Nuestros Servicios</a></i>
                                 </div>
                                 <!-- Single Blog Post -->
                                 <div class="widget-single-blog-post d-flex">
-                                    <div class="widget-post-thumbnail">
-                                        <img src="img/blog-img/ln3.jpg" alt="">
-                                    </div>
-                                    <div class="widget-post-content">
-                                        <a href="#reservacita">Reserva Tu cita</a>
-                                        <p>Chacla Medic</p>
-                                    </div>
+                                    <i class="fa fa-heartbeat" aria-hidden="true"> <a href="staff-medico.html" style="margin-left: 10px;">Staff Médico</a></i>
+                                </div>
+                                 <!-- Single Blog Post -->
+                                 <div class="widget-single-blog-post d-flex">
+                                    <i class="fa fa-heartbeat" aria-hidden="true"> <a href="promociones.html" style="margin-left: 10px;">Promociones</a></i>
+                                </div>
+                                 <!-- Single Blog Post -->
+                                 <div class="widget-single-blog-post d-flex">
+                                    <i class="fa fa-heartbeat" aria-hidden="true"> <a href="contact.html" style="margin-left: 10px;">Contacto</a></i>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <div class="col-12 col-sm-6 col-xl-3">
                         <div class="footer-widget-area">
                             <div class="widget-title">
@@ -525,7 +530,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-12 col-sm-6 col-xl-3">
                         <div class="footer-widget-area">
                             <div class="widget-title">
@@ -543,14 +547,14 @@
             </div>
         </div>
         <!-- Bottom Footer Area -->
-        <div class="bottom-footer-area" style="margin-top: 30px;">
+        <div class="bottom-footer-area">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
                         <div class="bottom-footer-content">
                             <!-- Copywrite Text -->
                             <div class="copywrite-text" style="text-align: center;">
-                                <p><a href="#" style=" color: #ffffff; font-size: 11px;">Desarrollado por Twenty Percent 2021 || Todos los Derechos Reservados</a></p>                </div>
+                                <p><a href="#" style=" color: #ffffff; font-size: 11px;">Desarrollado por Twenty Percent @2021 || Todos los Derechos Reservados</a></p>                </div>
                         </div>
                     </div>
                 </div>
@@ -568,9 +572,8 @@
     <!-- Plugins js -->
     <script src="js/plugins.js"></script>
     <!-- Active js -->
+    <!-- partial -->
     <script src="js/active.js"></script>
-
+    <script  src="./script.js"></script>
 </body>
-
-
 </html>

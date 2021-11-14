@@ -47,31 +47,33 @@
                         <div class="main-menu h-100">
                             <nav class="navbar h-100 navbar-expand-lg">
                                 <!-- Logo Area  -->
-                                <a class="navbar-brand" href="index-2.html"><img src="img/logoo.png" alt="Logo"></a>
+                                <a class="navbar-brand" href="index.html"><img src="img/logoo.png" alt="Logo"></a>
 
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#medilifeMenu" aria-controls="medilifeMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-
                                 <div class="collapse navbar-collapse" id="medilifeMenu">
                                     <!-- Menu Area -->
                                     <ul class="navbar-nav ml-auto">
-                                        <li class="nav-item active">
+                                        <li class="nav-item">
                                             <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="about-us.html">Sobre Nosotros</a>
                                         </li>
-                                        <li class="nav-item">
+                                        <li class="nav-item active">
                                             <a class="nav-link" href="services.html">Servicios Médicos</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="index.html">Staff de Médicos Profesionales</a>
+                                            <a class="nav-link" href="staff-medico.html">Staff Médico</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="promociones.html">Promociones</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="contact.html">Contacto</a>
                                         </li>
                                     </ul>
                                     <!-- Appointment Button -->
-                                    <a href="index.html" class="btn medilife-appoint-btn ml-30"><span>Reservar una cita</span></a>
+                                    <a href="#reservacita" class="btn medilife-appoint-btn"><span>Reservar una cita</span></a>
                                 </div>
                             </nav>
                         </div>
@@ -88,7 +90,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="breadcumb-content">
-                        <h3 class="breadcumb-title">Servicios Médicos</h3>
+                        <h3 class="breadcumb-title" style="color: #e84393;">Servicios Médicos</h3>
                         <p>Conoce nuestras principales especialidades y servicios médicos.</p>
                     </div>
                 </div>
@@ -97,33 +99,70 @@
     </section>
     <!-- ***** Breadcumb Area End ***** -->
 
+    <div id="boxServices">
+       <!-- partial -->
+       <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+             <!-- card education -->
+            <a class="card education"  id="institution-tab" data-toggle="tab" href="#institution" role="tab" aria-controls="faq" aria-selected="false">
+                <div class="overlay"></div>
+                <img src="img/services/medical-doctor.png" alt="" class="img-fluid" style="height: 100px; border-radius: 10%; position: absolute; margin-bottom: 40px;">
+                <p style="margin-top: 170px;">Consulta Médica</p>
+           </a>
+        </li>
+        <li class="nav-item">
+        <!--card credentialing-->
+        <a class="card credentialing" id="faq-tab" data-toggle="tab" href="#faq" role="tab" aria-controls="faq" aria-selected="false">
+                <div class="overlay"></div>
+                <img src="img/services/pediatrics.png" alt="" class="img-fluid" style="height: 100px; border-radius: 10%; position: absolute; margin-bottom: 40px;">
+                <p style="margin-top: 170px;">Pediatría</p>
+        </a>
+        </li>
+        <li class="nav-item">
+                 <!--card card wallet-->
+                <a class="card wallet" id="specialities-tab" data-toggle="tab" href="#specialities" role="tab" aria-controls="specialities" aria-selected="true">
+                    <div class="overlay"></div>
+                    <img src="img/services/obstetrics3.png" alt="" class="img-fluid" style="height: 100px; border-radius: 10%; position: absolute; margin-bottom: 40px;">
+                    <p style="margin-top: 170px;">Obstetricia</p>
+            </a>
+        </li>
+        <li class="nav-item">
+             <!--card human resources-->
+            <a class="card human-resources" id="laboratory-tab" data-toggle="tab" href="#laboratory" role="tab" aria-controls="laboratory" aria-selected="false">
+                <div class="overlay"></div>
+                <img src="img/services/nutrition.png" alt="" class="img-fluid" style="height: 100px; border-radius: 10%; position: absolute; margin-bottom: 40px;">
+                <p style="margin-top: 170px;">Nutrición</p>
+        </a>
+
+        </li>
+        <li class="nav-item">
+
+            <a class="card education" id="emergencies-tab" data-toggle="tab" href="#emergencies" role="tab" aria-controls="emergencies" aria-selected="false">
+                <div class="overlay"></div>
+             <img src="img/services/traumatology2.png" alt="" class="img-fluid" style="height: 100px; border-radius: 10%; position: absolute; margin-bottom: 40px;">
+             <p style="margin-top: 170px;">Traumatología</p>
+           </a>
+        </li>
+        <li class="nav-item">
+              <!--card card wallet-->
+              <a class="card wallet" id="scolarship-tab" data-toggle="tab" href="#scolarship" role="tab" aria-controls="scolarship" aria-selected="false">
+                <div class="overlay"></div>
+                <img src="img/services/ecografia.png" alt="" class="img-fluid" style="height: 100px; border-radius: 10%; position: absolute; margin-bottom: 40px;"> 
+            <p style="margin-top: 170px;">Ecografías</p>
+        </a>
+        </li>
+    </ul>
+
+    </div>
+    <!--fin de los cards especialidades-->
+
     <!-- ***** Tabs Area Start ***** -->
-    <section class="medilife-tabs-area section-padding-50">
+    <section class="medilife-tabs-area">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="medilife-tabs-content">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link" id="institution-tab" data-toggle="tab" href="#institution" role="tab" aria-controls="institution" aria-selected="false">Consulta Médica</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="faq-tab" data-toggle="tab" href="#faq" role="tab" aria-controls="faq" aria-selected="false">Pediatría</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" id="specialities-tab" data-toggle="tab" href="#specialities" role="tab" aria-controls="specialities" aria-selected="true">Obstetricia</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="laboratory-tab" data-toggle="tab" href="#laboratory" role="tab" aria-controls="laboratory" aria-selected="false">Nutrición</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="emergencies-tab" data-toggle="tab" href="#emergencies" role="tab" aria-controls="emergencies" aria-selected="false">Traumatología</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="scolarship-tab" data-toggle="tab" href="#scolarship" role="tab" aria-controls="scolarship" aria-selected="false">Ecografía 2D: Previa Cita</a>
-                            </li>
-                        </ul>
-
+                        <!---despues buscar la clase de medilife/tatbs-content y eliminar sus derivados porque ya no sirven-->
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade" id="institution" role="tabpanel" aria-labelledby="institution-tab">
                                 <div class="medilife-tab-content d-md-flex align-items-center">
@@ -255,7 +294,7 @@
                         </div>
                         <div class="service-content">
                             <h5>Chequeo General</h5>
-                            <ul><li>Costo: S/145.00</li></ul>
+                            <ul><li>Costo: Variable </li></ul>
                             <p>11 exámenes diferentes.</p>
                         </div>
                     </div>
@@ -268,8 +307,8 @@
                         </div>
                         <div class="service-content">
                             <h5>Inyectables Intramuscular</h5>
-                            <ul><li>Costo: S/3.00</li></ul>
-                            <p>Diagnóstico y evaluación.</p>
+                            <ul><li>Costo: S/6.00</li></ul>
+                            <p>Tratamiento completo.</p>
                         </div>
                     </div>
                 </div>
@@ -281,8 +320,8 @@
                         </div>
                         <div class="service-content">
                             <h5>Inyectables Subcutáneos</h5>
-                            <ul><li>Costo: S/15.00</li></ul>
-                            <p>Diagnóstico y Evaluación.</p>
+                            <ul><li>Costo: S/6.00</li></ul>
+                            <p>Tratamiento completo.</p>
                         </div>
                     </div>
                 </div>
@@ -294,8 +333,8 @@
                         </div>
                         <div class="service-content">
                             <h5>Inyectables Endovenoso</h5>
-                            <ul><li>Costo: S/10.00</li></ul>
-                            <p>Diagnóstico y Evaluación.</p>
+                            <ul><li>Costo: S/6.00</li></ul>
+                            <p>Tratamiento completo.</p>
                         </div>
                     </div>
                 </div>
@@ -306,8 +345,8 @@
                             <i class="icon-archive"></i>
                         </div>
                         <div class="service-content">
-                            <h5>Control de peso</h5>
-                            <ul><li>Costo: S/3.00</li></ul>
+                            <h5>Control de peso y Talla + SPO2</h5>
+                            <ul><li>Costo: S/5.00</li></ul>
                             <p>Recomendación según resultados.</p>
                         </div>
                     </div>
@@ -320,8 +359,8 @@
                         </div>
                         <div class="service-content">
                             <h5>Control de presión arterial.</h5>
-                            <ul><li>Costo: S/15.00</li></ul>
-                            <p>Recomendación según resultados.</p>
+                            <ul><li>Costo: S/3.00</li></ul>
+                            <p>Tratamiento completo.</p>
                         </div>
                     </div>
                 </div>
@@ -332,9 +371,74 @@
                             <i class="icon-bottle"></i>
                         </div>
                         <div class="service-content">
-                            <h5>Colocación de vía y suero vitaminados.</h5>
-                            <ul><li>Costo: S/145.00</li></ul>
-                            <p>Diagnóstico y tratamiento.</p>
+                            <h5>Colocación + Vitamina C.</h5>
+                            <ul><li>Costo: S/150.00</li></ul>
+                            <p>Tratamiento completo.</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Single Service Area -->
+                 <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex">
+                        <div class="service-icon">
+                            <i class="icon-bottle"></i>
+                        </div>
+                        <div class="service-content">
+                            <h5>Vía Endovenosa Tratamiento</h5>
+                            <ul><li>Costo: S/35.00</li></ul>
+                            <p>Tratamiento completo.</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Single Service Area -->
+                 <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex">
+                        <div class="service-icon">
+                            <i class="icon-bottle"></i>
+                        </div>
+                        <div class="service-content">
+                            <h5>Vía Ev. con Hidratación</h5>
+                            <ul><li>Costo: S/60.00</li></ul>
+                            <p>Tratamiento completo.</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Single Service Area -->
+                 <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex">
+                        <div class="service-icon">
+                            <i class="icon-bottle"></i>
+                        </div>
+                        <div class="service-content">
+                            <h5>Curación de Heridas Simples</h5>
+                            <ul><li>Costo: S/35.00</li></ul>
+                            <p>Tratamiento completo.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Service Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex">
+                        <div class="service-icon">
+                            <i class="icon-bottle"></i>
+                        </div>
+                        <div class="service-content">
+                            <h5>Curación de Pie Diabético</h5>
+                            <ul><li>Costo: S/50.00</li></ul>
+                            <p>Tratamiento completo.</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Single Service Area -->
+                 <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex">
+                        <div class="service-icon">
+                            <i class="icon-bottle"></i>
+                        </div>
+                        <div class="service-content">
+                            <h5>Retiro de Puntos</h5>
+                            <ul><li>Costo: S/35.00</li></ul>
+                            <p>Tratamiento completo.</p>
                         </div>
                     </div>
                 </div>
@@ -436,17 +540,110 @@
             </div>
         </div>
     </section>
+    
+        <!-- ***** Book An Appoinment Area Start ***** -->
+        <div class="medilife-book-an-appoinment-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="appointment-form-content">
+                            <div class="row no-gutters align-items-center" id="reservacita">
+                                <div class="col-12 col-lg-9">
+                                    <div class="medilife-appointment-form">
+                                        <form>
+                                            <div class="row align-items-end">
+                                                <div class="col-12 col-md-4">
+                                                    <div class="form-group">
+                                                        <select class="form-control" id="speciality">
+                                                        <option>Consulta Médica</option>
+                                                    </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="form-group">
+                                                        <input type="date" class="form-control" name="date" id="date" value="Seleccionar ">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="form-group">
+                                                        <select class="form-control" id="speciality">
+                                                        <option>Seleccione el momento</option>
+                                                        <option>Mañana</option>
+                                                        <option>Tarde</option>
+                                                    </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="form-group">
+                                                        <input type="text" style="color: cornsilk;" class="form-control border-top-0 border-right-0 border-left-0" name="name" id="name" placeholder="Nombres">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="form-group">
+                                                        <input type="number" oninput="if(value.length>9) value=value.slice(0,9)" style="color: cornsilk; font-weight: bold;" class="form-control border-top-0 border-right-0 border-left-0" name="number" id="number" placeholder="Celular">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="form-group">
+                                                        <input type="email" style="color: cornsilk;" class="form-control border-top-0 border-right-0 border-left-0" name="email" id="email" placeholder="Correo Electrónico">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-3 mb-0">
+                                                    <div class="form-group mb-0">
+                                                        <input type="text" style="color: cornsilk;" class="form-control mb-0 border-top-0 border-right-0 border-left-0" name="dni" id="dni" placeholder="DNI">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-group mb-0">
+                                                        <textarea name="message" style="color: cornsilk;" class="form-control mb-0 border-top-0 border-right-0 border-left-0" id="message" cols="30" rows="10" placeholder="Escriba su mensaje aquí"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-3 mb-0">
+                                                    <div class="form-group mb-0">
+                                                        <button type="submit" class="btn medilife-btn">Reservar Cita<span>+</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3">
+                                    <div class="medilife-contact-info">
+                                        <!-- Single Contact Info -->
+                                        <div class="single-contact-info mb-30">
+                                            <img src="img/icons/alarm-clock.png" alt="">
+                                            <p>Lunes - Viernes 08:00am - 6:00pm <br> Sábado 08:00 am - 12:00 pm <br>Domingo CERRADO</p>
+                                        </div>
+                                        <!-- Single Contact Info -->
+                                        <div class="single-contact-info mb-30">
+                                            <img src="img/icons/envelope.png" alt="">
+                                            <p>966107412 <br>chaclamedic.1@gmail.com</p>
+                                        </div>
+                                        <!-- Single Contact Info -->
+                                        <div class="single-contact-info">
+                                            <img src="img/icons/map-pin.png" alt="">
+                                            <p> Cooperativa Alfonso Cobian Mz H2 Lt 16, Chaclacayo <br>Referencia: Paradero Miguel Grau</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Book An Appoinment Area End ***** -->
 
-    <!-- ***** CTA Area Start ***** -->
+         <!-- ***** CTA Area Start ***** -->
     <div class="medilife-cta-area">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="cta-content">
                         <i class="icon-smartphone"></i>
-                        <h2>¿Quieres programar una cita?</h2>
-                        <h2 style="color: whitesmoke;">Llama al</h2>
-                        <h3> +51 979 763 581</h3>
+                        <h2 style="font-size: 30px;">¿Quieres programar una cita?</h2>
+                        <h2 style="color: whitesmoke; font-size: 30px;">Llama al</h2>
+                        <h3 style="font-size: 34px;"> +51 979 763 581</h3>
                     </div>
                 </div>
             </div>
@@ -454,115 +651,106 @@
     </div>
     <!-- ***** CTA Area End ***** -->
 
-     <!-- ***** Footer Area Start ***** -->
-     <footer class="footer-area section-padding-100">
-        <!-- Main Footer Area -->
-        <div class="main-footer-area">
-            <div class="container-fluid">
-                <div class="row">
+  <!-- ***** Footer Area Start ***** -->
+  <footer class="footer-area section-padding-100" style="background-image: url('./img/bg-img/hero1.jpg'); height: 490px;">
+    <!-- Main Footer Area -->
+    <div class="main-footer-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-xl-4">
+                    <div class="footer-widget-area">
+                        <div class="footer-logo">
+                            <img src="img/logoo.png" alt="">
+                        </div>
+                        <p style="text-align: justify; font-family: 'Montserrat', sans-serif; color: black;">CLÍNICA CHACLAMEDIC cuenta con una infraestructura moderna, personal médico capacitado y tecnología de última generación. Esto facilita a nuestros pacientes una atención médica de calidad.</p>
+                        <div class="footer-social-info">
+                            <a href="https://mail.google.com/mail/u/0/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/chacla-medic-consultorio-74aa82159/?originalSubdomain=pe" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/chaclamedic/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://www.youtube.com/watch?v=Dmi2yBTEQSY" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
 
-                    <div class="col-12 col-sm-6 col-xl-3">
-                        <div class="footer-widget-area">
-                            <div class="footer-logo">
-                                <img src="img/logoo.png" alt="">
+                <div class="col-12 col-sm-6 col-xl-2">
+                    <div class="footer-widget-area">
+                        <div class="widget-title">
+                            <h6>La clínica</h6>
+                        </div>
+                        <div class="widget-blog-post">
+                            <!-- Single Blog Post -->
+                            <div class="widget-single-blog-post d-flex" >
+                                <i class="fa fa-users" aria-hidden="true"> <a href="#panorama" style="margin-left: 10px;">Nosotros</a></i>
                             </div>
-                            <p>Nuestra prioridad es el paciente. Nos interesa su bienestar y su pronta recuperación.</p>
-                            <div class="footer-social-info">
-                                <a href="https://mail.google.com/mail/u/0/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                <a href="https://www.linkedin.com/in/chacla-medic-consultorio-74aa82159/?originalSubdomain=pe" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                <a href="https://www.facebook.com/chaclamedic/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="https://www.youtube.com/watch?v=Dmi2yBTEQSY" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                            <!-- Single Blog Post -->
+                            <div class="widget-single-blog-post d-flex" >
+                                <i class="fa fa-heartbeat" aria-hidden="true"> <a href="#descripcion" style="margin-left: 10px;">Características</a></i>
+                            </div>
+                            <!-- Single Blog Post -->
+                            <div class="widget-single-blog-post d-flex">
+                                <i class="fa fa-heartbeat" aria-hidden="true"> <a href="services.html" style="margin-left: 10px;">Nuestros Servicios</a></i>
+                            </div>
+                            <!-- Single Blog Post -->
+                            <div class="widget-single-blog-post d-flex">
+                                <i class="fa fa-heartbeat" aria-hidden="true"> <a href="staff-medico.html" style="margin-left: 10px;">Staff Médico</a></i>
+                            </div>
+                             <!-- Single Blog Post -->
+                             <div class="widget-single-blog-post d-flex">
+                                <i class="fa fa-heartbeat" aria-hidden="true"> <a href="promociones.html" style="margin-left: 10px;">Promociones</a></i>
+                            </div>
+                             <!-- Single Blog Post -->
+                             <div class="widget-single-blog-post d-flex">
+                                <i class="fa fa-heartbeat" aria-hidden="true"> <a href="contact.html" style="margin-left: 10px;">Contacto</a></i>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-12 col-sm-6 col-xl-3">
-                        <div class="footer-widget-area">
-                            <div class="widget-title">
-                                <h6>Sitios Top</h6>
-                            </div>
-                            <div class="widget-blog-post">
-                                <!-- Single Blog Post -->
-                                <div class="widget-single-blog-post d-flex">
-                                    <div class="widget-post-thumbnail">
-                                        <img src="img/blog-img/ln1.jpg" alt="">
-                                    </div>
-                                    <div class="widget-post-content">
-                                        <a href="index.html">Panorama General</a>
-                                        <p>Chacla Medic</p>
-                                    </div>
-                                </div>
-                                <!-- Single Blog Post -->
-                                <div class="widget-single-blog-post d-flex">
-                                    <div class="widget-post-thumbnail">
-                                        <img src="img/about/7.jpg" alt="">
-                                    </div>
-                                    <div class="widget-post-content">
-                                        <a href="index.html">Descripción</a>
-                                        <p>Chacla Medic</p>
-                                    </div>
-                                </div>
-                                <!-- Single Blog Post -->
-                                <div class="widget-single-blog-post d-flex">
-                                    <div class="widget-post-thumbnail">
-                                        <img src="img/blog-img/ln3.jpg" alt="">
-                                    </div>
-                                    <div class="widget-post-content">
-                                        <a href="index.html">Reserva Tu cita</a>
-                                        <p>Chacla Medic</p>
-                                    </div>
-                                </div>
-                            </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="footer-widget-area">
+                        <div class="widget-title">
+                            <h6>Horario de Atención</h6>
+                        </div>
+                        <div class="footer-contact-form">
+                            <p>Lunes a Viernes: 8:00 am - 6:00 pm </p>
+                            <br>
+                            <p>Sábados: 8:00 am - 12:00 pm</p>
+                            <br>
+                            <p>Domindos: Cerrado</p>
                         </div>
                     </div>
-
-                    <div class="col-12 col-sm-6 col-xl-3">
-                        <div class="footer-widget-area">
-                            <div class="widget-title">
-                                <h6>Horario de Atención</h6>
-                            </div>
-                            <div class="footer-contact-form">
-                                <p>Lunes a Viernes: 8:00 am - 6:00 pm </p>
-                                <br>
-                                <p>Sábados: 8:00 am - 12:00 pm</p>
-                                <br>
-                                <p>Domindos: Cerrado</p>
-                            </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="footer-widget-area">
+                        <div class="widget-title">
+                            <h6>Descuentos - convenios</h6>
                         </div>
-                    </div>
 
-                    <div class="col-12 col-sm-6 col-xl-3">
-                        <div class="footer-widget-area">
-                            <div class="widget-title">
-                                <h6>Descuentos - convenios</h6>
-                            </div>
-
-                            <div class="footer-newsletter-area">
-                                <a href="services.html" class="btn medilife-btn mt-50">Ver servicios<span>+</span></a>
-                                <hr>
-                                <p>Conoce nuestros principales servicios y tarifario con excelentes descuentos, así como también nuestro principal convenio.</p>
-                            </div>
+                        <div class="footer-newsletter-area">
+                            <a href="services.html" class="btn medilife-btn mt-50">Ver servicios<span>+</span></a>
+                            <hr>
+                            <p>Conoce nuestros principales servicios y tarifario con excelentes descuentos, así como también nuestro principal convenio.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Bottom Footer Area -->
-        <div class="bottom-footer-area" style="margin-top: 30px;">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="bottom-footer-content">
-                            <!-- Copywrite Text -->
-                            <div class="copywrite-text" style="text-align: center;">
-                                <p><a href="#" style=" color: #ffffff; font-size: 11px;">Desarrollado por Twenty Percent 2021 || Todos los Derechos Reservados</a></p>                </div>
-                        </div>
+    </div>
+    <!-- Bottom Footer Area -->
+    <div class="bottom-footer-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="bottom-footer-content">
+                        <!-- Copywrite Text -->
+                        <div class="copywrite-text" style="text-align: center;">
+                            <p><a href="#" style=" color: #ffffff; font-size: 11px;">Desarrollado por Twenty Percent @2021 || Todos los Derechos Reservados</a></p>                </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- ***** Footer Area End ***** -->
+    </div>
+</footer>
+<!-- ***** Footer Area End ***** -->
 
     <!-- jQuery (Necessary for All JavaScript Plugins) -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
