@@ -354,7 +354,7 @@ img {
   margin-left: 30px;
   display: inline-block;
   color: #ffffff;
-  background-color: #FC427B;
+  background-image: linear-gradient(to right top, #f9c1cd, #f8bccb, #f7b8c9, #f5b3c7, #f4afc5, #f0aeca, #ebadce, #e6add3, #dbb1dc, #ceb5e3, #c1b9e7, #b4bde9);
   height: 50px;
   line-height: 50px;
   font-size: 14px;
@@ -371,7 +371,7 @@ img {
     font-weight: 700; }
   .medilife-appoint-btn:hover, .medilife-appoint-btn:focus {
     color: #006cff;
-    background-color: #ffffff;
+    background-image: linear-gradient(to right top, #fbf2f4, #fbf5f7, #fcf7f9, #fcfafb, #fdfcfd, #fefdfe, #fefefe, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
     box-shadow: none;
     font-weight: 500; }
   .medilife-appoint-btn:hover span, .medilife-appoint-btn:focus span {
@@ -586,6 +586,7 @@ img {
 
 /* :: 5.0 Welcome Area CSS */
 .single-hero-slide {
+  margin-top: 155px;
   position: relative;
   z-index: 1;
   width: 100%;
@@ -601,6 +602,7 @@ img {
   color: white;
   font-size: 60px;
   margin-top: 420px;
+  text-shadow: 0.1em 0.1em 0.2em #4C5656;
 }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .hero-slides-content h2 {
@@ -798,7 +800,7 @@ textarea {
     text-align: center;
     line-height: 64px;
     font-size: 30px;
-    background-color: #e84393;
+    background-image: linear-gradient(to right top, #f9c1cd, #f8bccb, #f7b8c9, #f5b3c7, #f4afc5, #f0aeca, #ebadce, #e6add3, #dbb1dc, #ceb5e3, #c1b9e7, #b4bde9);
     border-radius: 50%;
     color: #ffffff;
     -webkit-transition-duration: 500ms;
@@ -814,7 +816,9 @@ textarea {
     .single-service-area .service-content p {
       margin-bottom: 0;  color: #6F1E51;}
   .single-service-area:hover .service-icon {
-    background-color: #006cff; } 
+    background-image: linear-gradient(to left, #c9b1d8, #d1afd6, #d9aed4, #e1acd0, #e9abcb, #e8acce, #e7acd0, #e6add3, #dbb1dc, #ceb5e3, #c1b9e7, #b4bde9);
+    cursor: pointer;
+  }
   .single-service-area:hover .service-content h5 {
     color: #006cff; }
 
@@ -949,7 +953,7 @@ textarea {
   text-align: center;
   height: 40px;
   padding-top: 5px;
-  background-color:#e84393;
+  background-image: linear-gradient(to right top, #f9c1cd, #f8bccb, #f7b8c9, #f5b3c7, #f4afc5, #f0aeca, #ebadce, #e6add3, #dbb1dc, #ceb5e3, #c1b9e7, #b4bde9);
   margin-top: 40px; }
   .footer-widget-area .footer-social-info a {
     color: #ffffff;
@@ -980,8 +984,10 @@ textarea {
     font-size: 12px; }
 .footer-widget-area .footer-contact-form {
  /* background-color: #081f3e; */
- background-color: #44bd32;
-  padding: 30px 40px; }
+ background-image: linear-gradient(to right top, #f9c1cd, #f8bccb, #f7b8c9, #f5b3c7, #f4afc5, #f0aeca, #ebadce, #e6add3, #dbb1dc, #ceb5e3, #c1b9e7, #b4bde9);
+  padding: 30px 40px; 
+  text-shadow: 0.1em 0.1em 0.1em #b4bde9;
+}
   @media only screen and (max-width: 767px) {
     .footer-widget-area .footer-contact-form {
       padding: 30px 20px; } }
@@ -1009,6 +1015,7 @@ textarea {
 .footer-widget-area .footer-newsletter-area p {
   font-size: 12px;
   color: #57595c;
+  text-shadow: 0.1em 0.1em 0.1em #ffffff;
   font-style: italic;
   margin-bottom: 0; }
 
@@ -1630,7 +1637,8 @@ textarea {
   text-align: center; }
   .single-cool-fact-area i {
     font-size: 100px;
-    color: #e84393;
+    color: #ffffff;
+    background-image: linear-gradient(to right top, #f9c1cd, #f8bccb, #f7b8c9, #f5b3c7, #f4afc5, #f0aeca, #ebadce, #e6add3, #dbb1dc, #ceb5e3, #c1b9e7, #b4bde9);
     margin-bottom: 30px;
     display: block; }
   .single-cool-fact-area h2 {
@@ -1673,11 +1681,11 @@ textarea {
 
 /*# sourceMappingURL=style.css.map */
 .medical-square {
-  background-color: #44bd32; padding: 15px; border-radius: 10px;
+  background-image: url('./img/prioridad.jpg'); padding: 15px; border-radius: 10px;
+  text-shadow: 0.1em 0.1em 0.1em #4C5656;
 }
 .medical-square:hover {
-  background-color: #f8a5c2;
-  cursor: progress;
+  cursor: pointer;
 }
 
 .medical-square h2 {
@@ -1729,7 +1737,7 @@ textarea {
   --box-shadow-color: rgba(220, 233, 255, 0.48);
 }
 
-#boxServices .card {
+.boxServices .card {
   width: 220px;
   height: 321px;
   background: #fff;
@@ -1745,36 +1753,36 @@ textarea {
   text-decoration: none;
 }
 
-#boxServices .card:hover {
+.boxServices .card:hover {
   transform: translateY(-5px) scale(1.005) translateZ(0);
   box-shadow: 0 24px 36px rgba(0,0,0,0.11),
     0 24px 46px var(--box-shadow-color);
 }
 
-#boxServices .card:hover .overlay {
+.boxServices .card:hover .overlay {
   transform: scale(4) translateZ(0);
 }
 
-#boxServices .card:hover .circle {
+.boxServices .card:hover .circle {
   border-color: var(--bg-color-light);
   background: var(--bg-color);
 }
 
-#boxServices .card:hover .circle:after {
+.boxServices .card:hover .circle:after {
   background: var(--bg-color-light);
 }
 
-#boxServices .card:hover p {
+.boxServices .card:hover p {
   color: var(--text-color-hover);
 }
 
-#boxServices .card:active {
+.boxServices .card:active {
   transform: scale(1) translateZ(0);
   box-shadow: 0 15px 24px rgba(0,0,0,0.11),
     0 15px 24px var(--box-shadow-color);
 }
 
-#boxServices .card p {
+.boxServices .card p {
   font-size: 17px;
   color: #4C5656;
   margin-top: 30px;
@@ -1814,7 +1822,7 @@ textarea {
   transform: translateZ(0);
 }
 
-#boxServices .overlay {
+.boxServices .overlay {
   width: 118px;
   position: absolute; 
   height: 118px;
@@ -1824,4 +1832,8 @@ textarea {
   left: 50px;
   z-index: 0;
   transition: transform 0.3s ease-out;
+}
+
+.nav-item .card img {
+  height: 100px; border-radius: 10%; position: absolute; margin-bottom: 40px;
 }
