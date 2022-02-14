@@ -1839,9 +1839,18 @@ textarea {
 .nav-item .card img {
   height: 100px; border-radius: 10%; position: absolute; margin-bottom: 40px;
 }
-
-/* estilos agregados*/
-.medilife-tab-img {
-  align-items: center;
+.features-thumbnail img {
+height: 304px;
+}
+.features-thumbnail h4,p {
+  display: flex;
+  justify-content: center;
+}
+.features-content h4, p {
   text-align: center;
+}
+
+.p-direction {
+  font-size: 13px;
+  text-align: start;
 }
